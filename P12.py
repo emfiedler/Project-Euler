@@ -23,10 +23,18 @@ while x > 0:
     z.append(x)
     r = sum(z)
     q = []
-    for y in range(1,(r+1)):
+    if r == 1:
+        q.append(r)
+    else:
+        q.append(r)
+        q.append(1)
+    for y in range(2,(r+1)):
+        if y >= (r**0.5):
+            break
         if r % 2 == 1:
             break
         if r % y == 0:
+            q.append(y)
             q.append(y)
     print(len(q))
     print(r)
