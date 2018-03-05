@@ -36,8 +36,6 @@ while x > 0:
         if r % y == 0:
             q.append(y)
             q.append(y)
-    print(len(q))
-    print(r)
     if len(q) > 500:
         print(r)
         break
